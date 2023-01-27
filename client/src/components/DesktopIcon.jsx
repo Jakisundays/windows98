@@ -2,7 +2,6 @@ import React from "react";
 import Draggable from "react-draggable";
 import { useDispatch } from "react-redux";
 import "../styles/DesktopIcon.css";
-// import iconExample from "../assets/compu.png";
 
 const DesktopIcon = ({ title, icon, funcion }) => {
   const dispatch = useDispatch();

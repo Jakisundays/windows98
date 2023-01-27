@@ -1,5 +1,5 @@
 import React from "react";
-import "/Users/jacobdominguez/Documents/codiyapa/MERN/Mern Auth/client/src/styles/Folder.css";
+import "../styles/Folder.css";
 import { MdOutlineExpandMore } from "react-icons/md";
 import folder from "../assets/folder.png";
 import Draggable from "react-draggable";
