@@ -9,4 +9,5 @@ export default configureStore({
     icon: iconReducer,
     note: noteReducer,
   },
+  devTools: false,
 });
