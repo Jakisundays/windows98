@@ -1,0 +1,24 @@
+.desktop-icon {
+  width: 75px;
+  height: 75px;
+  /* position: absolute; */
+  outline: none;
+  display: inline-block;
+  object-fit: cover;
+  vertical-align: bottom;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.desktop-icon h6{
+    font-family: sans-serif;
+    font-family: "MS Sans Serif", "Segoe UI", sans-serif;
+    /* font-size: 10px; */
+    font-size: 8pt;
+    background: var(--Background);
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}

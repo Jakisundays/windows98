@@ -1,0 +1,23 @@
+.nm-container{
+    width: 300px;
+    /* height: 40vh; */
+}
+
+.nm-form{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nm-title{
+    width: 250px;
+}
+
+.nm-text{
+    resize: none;
+}
+
+.nm-submit{
+    align-self: center;
+    margin-top: 6px;
+}

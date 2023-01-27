@@ -1,0 +1,99 @@
+.taskbar {
+    outline: 1px solid var(--ButtonLight);
+    border-top: 1px solid var(--ButtonHilight);
+    background: var(--ButtonFace);
+    color: var(--ButtonText);
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 27px;
+    display: flex;
+    flex: 1;
+  }
+  .taskbar .start-button {
+    flex-shrink: 0;
+    padding: 2px 4px;
+  }
+  
+  .taskbar button {
+    line-height: 14px;
+    padding: 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .taskbar button,
+  .taskbar-divider,
+  .tray {
+    margin: 2px;
+  }
+  
+  .taskbar-divider {
+    border-left: 1px solid var(--ButtonShadow);
+    border-right: 1px solid var(--ButtonHilight);
+  }
+  .taskbar-time {
+    font-family: sans-serif;
+    font-family: "MS Sans Serif", "Segoe UI", sans-serif;
+    font-size: 12px;
+  }
+  
+  .tasks {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    min-width: 0;
+  }
+  
+  .taskbar button,
+  .taskbar-divider,
+  .tray {
+    margin: 2px;
+  }
+  
+  .tray {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    line-height: 22px;
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+  
+  .inset-shallow {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(128, 128, 128) rgb(255, 255, 255) rgb(255, 255, 255)
+      rgb(128, 128, 128);
+    border-color: var(--ButtonShadow) var(--ButtonHilight) var(--ButtonHilight)
+      var(--ButtonShadow);
+    background-color: rgb(192, 192, 192);
+    background-color: var(--ButtonFace);
+    color: rgb(0, 0, 0);
+    color: var(--ButtonText);
+  }
+  
+  .tray-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+  }
+  
+  .tray-icon {
+    margin-left: 1px;
+  }
+  
+  .taskbar-time {
+    /* font-family: sans-serif; */
+    /* font-family: "MS Sans Serif", "Segoe UI", sans-serif; */
+    font-size: 12px;
+    width: 60px;
+    text-align: center;
+  }

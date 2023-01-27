@@ -1,0 +1,67 @@
+POST http://localhost:8000/user/signup
+Content-Type: application/json
+
+{
+    "email": "email@email.com",
+    "username": "email",
+    "password": "email"
+}
+
+###
+GET http://localhost:8000/user
+
+###
+DELETE http://localhost:8000/user
+
+###
+POST http://localhost:8000/user/login
+Content-Type: application/json
+
+{
+    "username": "zBrett517",
+    "password": "1234"
+}
+
+###
+POST http://localhost:8000/posts
+Authorization: BEAR eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlkIjoiNjNjNDkzNjU4N2E1ZTg1MjA2MmI2YzkxIiwiaWF0IjoxNjczODI3MTczLCJleHAiOjE2NzM4MzA3NzN9.klYXQmtItYcftkkH8t6XTo5Ugoa0Cva9qiilG-0CIjQ
+Content-Type: application/json
+
+{
+    "title": "La cenicienta",
+    "message": "este es el mensaje",
+    "creator": "disney",
+    "tags": ["disney","princess"]
+}
+
+###
+GET http://localhost:8000/posts
+
+###
+DELETE http://localhost:8000/posts
+
+###
+GET http://localhost:8000/posts/63c4939b87a5e852062b6c93
+Authorization: BEAR eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsImlkIjoiNjNjNDkzNjU4N2E1ZTg1MjA2MmI2YzkxIiwiaWF0IjoxNjczODI3MTczLCJleHAiOjE2NzM4MzA3NzN9.klYXQmtItYcftkkH8t6XTo5Ugoa0Cva9qiilG-0CIjQ
+
+###
+PATCH http://localhost:8000/posts/63acbe90a3da273c345c6b78
+Authorization: BEAR eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InpCcmV0dDUxNyIsImlkIjoiNjNhY2IwZGI3NWFlMmIyYWMwYWZiM2RiIiwiaWF0IjoxNjcyMjYyMzg0LCJleHAiOjE2NzIyNjU5ODR9.VOxWFU2AAvkGUox5mwlJ7CTE2C7TaET72hoYzmK2-B8
+Content-Type: application/json
+
+{
+    "title": "Ya no es la cenicientaaaa"
+}
+
+###
+DELETE http://localhost:8000/posts/63acbe90a3da273c345c6b78
+Authorization: BEAR eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InpCcmV0dDUxNyIsImlkIjoiNjNhY2IwZGI3NWFlMmIyYWMwYWZiM2RiIiwiaWF0IjoxNjcyMjYyMzg0LCJleHAiOjE2NzIyNjU5ODR9.VOxWFU2AAvkGUox5mwlJ7CTE2C7TaET72hoYzmK2-B8
+
+###
+PATCH http://localhost:8000/posts/63acbe90a3da273c345c6b78/likes
+Authorization: BEAR eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InpCcmV0dDUxNyIsImlkIjoiNjNhY2IwZGI3NWFlMmIyYWMwYWZiM2RiIiwiaWF0IjoxNjcyMjYyMzg0LCJleHAiOjE2NzIyNjU5ODR9.VOxWFU2AAvkGUox5mwlJ7CTE2C7TaET72hoYzmK2-B8
+###
+PATCH http://localhost:8000/posts/63acbe90a3da273c345c6b78/dislikes
+Authorization: BEAR eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InpCcmV0dDUxNyIsImlkIjoiNjNhY2IwZGI3NWFlMmIyYWMwYWZiM2RiIiwiaWF0IjoxNjcyMjYyMzg0LCJleHAiOjE2NzIyNjU5ODR9.VOxWFU2AAvkGUox5mwlJ7CTE2C7TaET72hoYzmK2-B8
+
+

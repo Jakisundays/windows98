@@ -1,0 +1,155 @@
+.folder-container {
+  width: 34rem;
+  height: 55vh;
+  position: relative;
+}
+
+@media screen and (max-width: 425px) {
+  .folder-container {
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .folder-container {
+    width: 19.5rem;
+  }
+}
+
+/* Folder Parent component */
+.toolbars {
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  border: 1px solid var(--ButtonShadow);
+  box-shadow: 0 1px 0 var(--ButtonHilight), 0 1px 0 var(--ButtonHilight) inset;
+}
+
+/* FolderMenu */
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  margin: 1px;
+  position: relative;
+  /* height: 21px; */
+}
+
+.menus {
+  /* flex: 0 0 auto; */
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  background: var(--Menu);
+  color: var(--MenuText);
+  position: relative;
+}
+
+.menu-button {
+  box-shadow: none;
+}
+
+.menu-hotkey {
+  text-decoration: underline;
+}
+
+.folder-list{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  left: 0;
+  top: 15;
+  border: solid red;
+}
+
+.spacer {
+  border: 1px solid;
+  border-color: rgb(255, 255, 255) rgb(128, 128, 128) rgb(128, 128, 128)
+    rgb(255, 255, 255);
+  width: 5px;
+  /* height: 20px; */
+}
+
+/* Options menu  */
+
+.options-wrapper {
+  display: flex;
+  /* width: 100%; */
+  border: solid red;
+  /* gap: 10px; */
+  /* Puedes cambiar el jc */
+  /* justify-content: space-around; */
+  /* margin: 1px; */
+  /* height: 34px; */
+}
+
+/* HelpIcons */
+.help-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* padding: 2px; */
+}
+
+.help-icon img {
+  height: 17px;
+}
+
+.help-icon span {
+  font-size: 1.2em;
+}
+
+.no-border {
+  /* border: none !important; */
+  box-shadow: none;
+}
+
+/* Address bar */
+.address-container {
+  display: flex;
+
+  width: 100%;
+  gap: 10px;
+  font-size: 1.2em;
+}
+
+.address-container p {
+  align-self: center;
+}
+
+.address-url {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  padding-left: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(128, 128, 128) rgb(255, 255, 255) rgb(255, 255, 255)
+    rgb(128, 128, 128);
+}
+
+.address-url img {
+  height: 23px;
+}
+
+.address-url button {
+  position: absolute;
+  width: fit-content;
+}
+
+.address-expand {
+  position: absolute;
+  right: 2px;
+}
+
+.display-notes {
+  position: relative;
+}

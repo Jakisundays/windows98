@@ -1,0 +1,27 @@
+.post-container{
+    width: 300px;
+}
+
+.post-body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.likes{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.likes div{
+    display: flex;
+    gap: 7px;
+}
+
+.post-date{
+    /* justify-self: end; */
+    align-self: flex-start;
+}

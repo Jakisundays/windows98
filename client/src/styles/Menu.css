@@ -1,0 +1,61 @@
+.start-menu {
+  background-color: silver;
+  position: fixed;
+  left: 2px;
+  bottom: 28px;
+  width: 207px;
+  height: 334px;
+  border: 2px outset #fff;
+  box-shadow: 1px 1px #000;
+  z-index: 999;
+  /* overflow-y: auto; */
+}
+
+.system-name {
+  display: inline-block;
+  width: 21px;
+  background-color: blue;
+  position: absolute;
+  height: 334px;
+  background: linear-gradient(#00045f, #010079, blue);
+  background: blue;
+  background: -webkit-linear-gradient(#00045f, #010079, blue);
+  background: -moz-linear-gradient(#00045f, #010079, blue);
+}
+
+.text-name{
+  color: #fff;
+  font-size: 16px;
+  -webkit-transform: rotate(-90deg) translate(-300px, -10px);
+  transform: rotate(-90deg) translate(-300px, -10px);
+}
+
+.menu-options{
+    display: inline-block;
+    left: 25px;
+    width: 186px;
+    height: 334px;
+    position: fixed;
+}
+
+.menu-item{
+    /* position: absolute; */
+    display: flex;
+    /* border: solid red; */
+    align-items: center;
+    gap: 15px;
+    padding: 8px;
+    width: 100%;
+    /* justify-content: space-around; */
+}
+
+.menu-item img{
+    /* justify-self: flex-start; */
+    width: 30px;
+    vertical-align: middle;
+}
+
+.menu-item:hover{
+    background-color: blue;
+    color: white;
+}

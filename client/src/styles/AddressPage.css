@@ -1,0 +1,64 @@
+.address-page-container {
+  display: flex;
+  height: 43vh;
+  gap: 15px;
+}
+
+@media screen and (max-width: 425px) {
+  .address-page-container {
+    height: 39vh;
+  }
+}
+
+.address-folder-description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px 0 0 6px;
+  height: fit-content;
+}
+
+.address-folder-description img {
+  width: 100px;
+}
+
+.address-note-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  overflow: auto;
+  gap: 10px;
+  padding-top: 7px;
+  width: 100%;
+}
+
+.icon-note {
+  height: fit-content;
+  display: flex;
+  width: 3.65rem;
+  gap: 3px;
+  font-size: 1.3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-note p {
+  color: white;
+  background-color: gray;
+  font-size: 1rem;
+}
+
+.expand-icon {
+  position: fixed;
+  width: 18vw;
+  height: 18vh;
+}
+
+@media screen and (max-width: 425px) {
+  .expand-icon {
+    width: 13rem;
+    height: 11rem;
+  }
+}
